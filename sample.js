@@ -114,3 +114,25 @@ function checkscope() {
   //logical()
   //assignment()
   //miscellaneous()
+  
+  
+  function activity(){
+    a = 30
+    b = 45
+    c = 'Answer'
+    
+    //1: a is not greater than b or a is less than b
+    var first = ((!(a>b))||(a<b))
+    //2: sum of the value of a and b multiply by the difference of the value of a and b AND the product of the value of a and b plus the difference of the value of a and b
+    var second = ((a += b)*(a -= b)&&(a *= b)+(a -= b))
+    //3: c plus the sum of a and b plue the difference of b and a plus c
+    var third = c + (a + b) + (b - a) + c
+    
+    //NOTE: FOLLOW THE SEQUENCE
+    
+    document.write("FIRST: " + first + "<br>")
+    document.write("SECOND: " + second + "<br>")
+    document.write("THIRD: " + third + "<br>")
+  }
+  
+  activity()
